@@ -9,53 +9,66 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
 
   <body>
     <header class="header">
-      <a href="/" class="link"
-        ><span lang="en" class="header-logo logo">Web</span
-        ><span lang="en" class="header-logo-second logo">Studio</span></a
-      >
-      <nav class="header-navigation">
-        <ul class="header-list">
-          <li class="header-item list">
-            <a href="" class="header-link link header-text current">Студия</a>
-          </li>
-          <li class="header-item list">
-            <a href="./portfolio.html" class="header-link link header-text"
-              >Портфолио</a
+      <div class="container">
+        <a href="/" class="link header-logo-margin"
+          ><span lang="en" class="header-logo logo">Web</span
+          ><span lang="en" class="header-logo-second logo">Studio</span></a
+        >
+        <nav class="header-navigation">
+          <ul class="header-list">
+            <li class="header-item list">
+              <a href="" class="header-link link header-text current">Студия</a>
+            </li>
+            <li class="header-item list">
+              <a href="./portfolio.html" class="header-link link header-text"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-item list">
+              <a href="" class="header-link link header-text">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts">
+          <li class="list">
+            <a
+              class="header-contacts-link link header-text"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="header-item list">
-            <a href="" class="header-link link header-text">Контакты</a>
+          <li class="list">
+            <a
+              class="header-contacts-link link header-text"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-contacts">
-        <li class="list">
-          <a
-            class="header-contacts-link link header-text"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="list">
-          <a
-            class="header-contacts-link link header-text"
-            href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-btn">Заказать услугу</button>
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero-btn">Заказать услугу</button>
+          </div>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
