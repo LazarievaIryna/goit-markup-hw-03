@@ -143,6 +143,8 @@ ol {
 }
 .hero-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   
 }
 .hero-title {
@@ -153,13 +155,19 @@ ol {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title-color);
-  padding-top: 200px;
+  margin-top: 200px;
   display: inline-block;
-  text-align: center;
   max-width: 696px;
   margin-bottom: 30px;
 }
 .hero-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-color: transparent;
+  text-align: center;
+  margin-bottom: 200px;
   background-color: #2196f3;
   font-family: inherit;
   font-weight: 700;
@@ -175,7 +183,19 @@ ol {
 }
 
 /* ---------------------ADVANTAGES--------------------- */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+}
+.advantages .container {
+  display: flex;
+}
+.advantages-list {
+  display: flex;
+}
 .advantages-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -185,6 +205,13 @@ ol {
 }
 .advantages-text {
   color: var(--main-text-color);
+  min-width: 270px;
+}
+.advantages-item {
+  margin-right: 30px;
+}
+.advantages-item:last-child {
+  margin-right: 0;
 }
 /* ---------------------ABOUT--------------------- */
 .about-title {
