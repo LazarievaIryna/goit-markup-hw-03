@@ -45,7 +45,18 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  outline: 1px solid red;
+  
+}
+.container-portfolio {
+  padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
 }
 .logo {
   font-family: "Raleway";
@@ -192,11 +203,7 @@ img {
 }
 
 /* ---------------------ADVANTAGES--------------------- */
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #2196f3;
-}
+
 .advantages .container {
   display: flex;
 }
@@ -223,10 +230,8 @@ img {
   margin-right: 0;
 }
 /* ---------------------ABOUT--------------------- */
-.about {
-  padding-bottom: 94px;
-
-  background-color: aqua;
+.about.section {
+  padding-top: 0;
 }
 .about-title {
   text-align: center;
@@ -250,11 +255,7 @@ img {
 }
 
 /* ---------------------TEAM--------------------- */
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: aquamarine;
-}
+
 .team {
   background-color: var(--team-bcg-color);
 }
@@ -337,12 +338,11 @@ img {
   color: var(--hero-title-color);
 }
 /* ---------------------PORTFOLIO--------------------- */
-.filters {
-  padding-top: 94px;
-}
+
 .filters-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filters-link {
   margin-right: 8px;
@@ -351,6 +351,10 @@ img {
   margin-right: 0;
 }
 .filter-btn {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+ 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -372,15 +376,32 @@ img {
   color: var(--hero-title-color);
 }
 .portfolio {
+
+  width: calc(100%/3-30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+ 
   background-color: var(--main-bcg-color);
 }
+.portfolio:nth-last-child(-n+3){
+  margin-bottom: 0;
+}
+
+.portfolio-padding {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
